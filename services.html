@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+
+<link rel="icon" type="image/x-icon" href="photo/bertologo1.png">
+<link type="text/html"  href="account.html">
+<head>
+    <title>BERTO-Bin</title>
+    <style>*{
+    margin: 0;
+    padding: 0;
+    }
+    body {
+    background-image: url(photo/ece.jpg);
+
+    }
+
+    h1{
+    margin: 40px;
+    }
+    .header {
+    background-color: orange;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    }
+
+    .main{
+    width: 100%;
+    <ba></ba>ckground: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(bertologo.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+    }
+
+    footer{
+        background: orange;
+        margin: auto;
+        }
+
+    
+        footer table{
+        
+            background-size: 100% 100%;
+            font-size: 12px;
+        }
+    .navbar{
+    width: auto;
+    height: 75px;
+    margin: auto;
+    background-color: black;
+    }
+
+    .icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+    }
+
+    .logo{
+    color: #3368FF;
+    font-size: 19px;
+    font-family: Arial;
+    padding-left: 100px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px
+
+    }
+
+    .menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+    padding-left: 100px;
+
+    }
+
+    ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+    }
+
+    ul li a{
+    text-decoration: none;
+    color: #3368FF;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    }
+
+    ul li a:hover{
+    color: #fff;
+    }
+
+    .search{
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+    }
+
+    .srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid #3368FF;
+    margin-top: 13px;
+    color: #fff;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    }
+
+    .btn{
+    width: 100px;
+    height: 40px;
+    background: #3368FF;
+    border: 2px solid #3368FF;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+    }
+    .btn:hover{
+    color: #000;
+    }
+
+    .btn:focus{
+    outline: none;
+    }
+
+    .srch:focus{
+    outline: none;
+    }
+
+    .content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #00000;
+    position: relative;
+    }
+
+
+    .btnn{
+    width: 240px;
+    height: 40px;
+    background: #3368FF;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+    align-content: right;
+   
+    }
+    .btnn:hover{
+    background: #3368FF;
+    color: #ff7200;
+    }
+    .btnn a{
+    text-decoration: none;
+    color: #00000;
+    font-weight: bold;
+    }
+    .liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    }
+    .icons a{
+    text-decoration: none;
+    color: #fff;
+    }
+    .icons ion-icon{
+    color: #fff;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+    }
+    .icons ion-icon:hover{
+    color: #ff7200;
+    }
+    .pagination a {
+    color: black;
+    float: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    }
+    .pagination a:hover{
+    color: blue;
+    }
+
+iframe{
+float:left;
+margin-left: 40px;
+margin-top: 0px;
+
+}
+
+
+.form input{
+  font-size: 18px;
+  padding: 0 17px;
+  border: 1px solid #999;
+}
+.form input:focus{
+  box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+.form input::placeholder{
+  color: #999;
+}
+.form button{
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 17px;
+  background: #3498DB;
+}
+.qr-code{
+  opacity: 0;
+  display: flex;
+  padding: 33px 0;
+  border-radius: 5px;
+  align-items: center;
+  pointer-events: none;
+  justify-content: center;
+  border: 1px solid #ccc;
+}
+.wrapper.active .qr-code{
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.5s 0.05s ease;
+}
+.qr-code img{
+  width: 170px;
+}
+@media (max-width: 430px){
+  .wrapper{
+    height: 255px;
+    padding: 16px 20px;
+  }
+  .wrapper.active{
+    height: 510px;
+  }
+  header p{
+    color: #696969;
+  }
+  .form :where(input, button){
+    height: 52px;
+  }
+  .qr-code img{
+    width: 160px;
+  }  
+}
+!// WRAPPER 
+
+box{
+  width: 600px;
+    background: linear-gradient(to right, #222474, #080808);
+    padding: 2rem;
+    margin: 1rem 2rem;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    box-shadow: 1px 30px 20px rgba(0, 0, 0, 0.1);
+    height: 220px;
+}
+.wrapper1 {
+  height: 620px; /* Adjusted height */
+  max-width: 500px; /* Adjusted width */
+  background:lightblue;
+  border-radius: 7px;
+  padding: 20px 25px 0;
+  transition: height 0.2s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-right: 70px;
+  margin-top: 55px;
+  float: right;
+}
+
+.wrapper1.active {
+  height: 830px; /* Adjusted active state height */
+}
+
+.form1 {
+  margin: 20px 0 25px;
+}
+
+.form1 :where(input, button) {
+  width: 80%;
+  height: 55px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  transition: 0.1s ease;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.form1 input {
+  font-size: 18px;
+  padding: 0 17px;
+  border: 1px solid #999;
+}
+
+.form1 input:focus {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+
+.form1 input::placeholder {
+  color: #999;
+}
+
+.form1 button {
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 17px;
+  background: #3498DB;
+}
+
+.qr-code {
+  opacity: 0;
+  display: flex;
+  padding: 33px 0;
+  border-radius: 5px;
+  align-items: center;
+  pointer-events: none;
+  justify-content: center;
+  border: 1px solid #ccc;
+}
+
+.wrapper1.active .qr-code {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.5s 0.05s ease;
+}
+
+.qr-code img {
+  width: 170px;
+}
+
+.form1 h1 {
+  margin-left: 30px;
+  margin-bottom: 0px;
+}
+
+.box1{
+  height: 100px; /* Adjusted height */
+  max-width: 600px; /* Adjusted width */
+  background:lightblue;
+  border-radius: 7px;
+margin-left: 40px;
+  transition: height 0.2s ease;
+  margin-top: 35px;
+    float: left ;
+}
+.box1 h1{
+float: left;
+margin-left: 20px;
+margin-top: 5px;
+}
+.box1 p{
+margin-top: 10px;
+}
+
+@media (max-width: 430px) {
+  .wrapper1 {
+    height: 255px;
+    padding: 16px 20px;
+  }
+
+  .wrapper1.active {
+    height: 510px;
+  }
+
+  header p {
+    color: #696969;
+  }
+
+  .form1 :where(input, button) {
+    height: 52px;
+  }
+
+  .qr-code img {
+    width: 160px;
+  }
+}
+
+    </style>
+</head>
+<body>
+<! HEADER
+<div class="main"  >
+    <div class="navbar">
+      <div class="icon">
+        <h2 class="logo"><img src="photo/logo.png" alt="logo" width="150%"><br></h2>
+    </div>
+
+        <div class="menu" align="right">
+            <ul>
+                <li></li>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="#">SERVICE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </div>
+
+        <br>
+        <br><br>
+    </div>
+        <div>
+          <br>
+          <br>
+        </div>
+                      <div class="wrapper1">
+                        <div class="form1">
+                          <div class="box">
+                          <h1> Register here!</h1>
+                            <input type="text" placeholder="Name" class="name-input">
+                            <input type="email" placeholder="Email" class="email-input">
+                            <input type="text" placeholder="Student ID" class="student-id-input">
+                            <input type="text" placeholder="Year" class="year-input">
+                            <input type="text" placeholder="Course" class="course-input">
+                            <button class="generate-btn">Generate QR Code</button>
+                        </div>
+                        <div class="qr-code">
+                            <img src="" alt="QR Code">
+                        </div>
+                    </div>
+                    
+                    </div>
+                    
+                    <script src="qr.js"></script>
+                    </div>
+                    <div></div>
+                        <br>
+</body>
+
+
+<script>
+    function navigateToaccount() {
+        var login = document.getElementById("login").value;
+        window.location.href = "account.html?data=" + encodeURIComponent(login);
+    }
+</script>
+
+
+<div class="box1">
+    <h1> Directions:</h1>
+    <p>Make sure to register to store your data points and get incentives while reducing waste and practicing green environment
+  <br>Save your QR code! for your next deposit and purchase.</p>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="img">
+    <br>
+    <br>
+
+    <iframe src="https://www.bing.com/ck/a?!&&p=014a783d7000c472JmltdHM9MTcxMDExNTIwMCZpZ3VpZD0yN2YyM2I5NC1hNjkzLTZmODUtMDk1Ny0zNWZhYTdmZDZlNTEmaW5zaWQ9NTE5OQ&ptn=3&ver=2&hsh=3&fclid=27f23b94-a693-6f85-0957-35faa7fd6e51&psq=gma+news&u=a1aHR0cHM6Ly93d3cuZ21hbmV0d29yay5jb20vbmV3cy8&ntb=1" width="45%" height="500px" frameborder="10"></iframe>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+   
+  
+  
+</div>
+</section>
+<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    
+        </div>
+
+    <br>
+    <br>
+    <br>
+      </body>
+    </html>
